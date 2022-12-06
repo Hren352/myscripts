@@ -43,7 +43,7 @@ docker-compose --version
 #remote-containers
 
 #cleaning system
-sudo apt-get autoclean
-sudo apt-get autoremove
-sudo apt-get clean
-sudo apt-get -f install
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
+sudo apt-get clean -y
+sudo apt-get -f install -y
