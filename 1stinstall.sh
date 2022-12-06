@@ -7,6 +7,8 @@ sudo apt install ncdu -y
 sudo apt install fail2ban -y
 sudo apt install iptstate -y
 
+timedatectl set-timezone Europe/Moscow
+
 #Установка Docker в Ubuntu
 sudo apt install docker -y
 sudo apt install docker.io -y
