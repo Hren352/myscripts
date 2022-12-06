@@ -1,22 +1,22 @@
 #!/usr/bin/bash
 
-echo "update ..."
+sudo echo "update ..."
 sudo apt update -y
-echo "update ......"
+sudo echo "update ......"
 sudo apt upgrade -y
-echo "installing MC"
-sudo apt install mc -y
-echo "installing NCDU"
+sudo echo "installing MC"
+sudo sudo apt install mc -y
+sudo echo "installing NCDU"
 sudo apt install ncdu -y
-echo "installing fail2ban"
+sudo echo "installing fail2ban"
 sudo apt install fail2ban -y
-echo "installing iptstate"
+sudo echo "installing iptstate"
 sudo apt install iptstate -y
 
-echo "setup timezone"
+sudo echo "setup timezone"
 timedatectl set-timezone Europe/Moscow
 
-echo "setup Docker"
+sudo echo "setup Docker"
 #Установка Docker в Ubuntu
 sudo apt install docker -y
 sudo apt install docker.io -y
@@ -24,7 +24,7 @@ sudo usermod -aG docker $USER
 sudo usermod -aG docker ${USER}
 
 #Установка Docker Compose на Linux
-echo "setup Docker Compose"
+sudo echo "setup Docker Compose"
 sudo apt install curl -y
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 #Для установки другой версии замените 1.29.2 на нужный вам номер.
