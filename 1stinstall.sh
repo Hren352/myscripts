@@ -1,21 +1,41 @@
 #!/usr/bin/bash
 
+sudo clear
 sudo echo "update ..."
 sudo apt update -y
+sudo sleep 2
+
+sudo clear
 sudo echo "update ......"
 sudo apt upgrade -y
+sudo sleep 2
+
+sudo clear
 sudo echo "installing MC"
 sudo sudo apt install mc -y
+sudo sleep 2
+
+sudo clear
 sudo echo "installing NCDU"
 sudo apt install ncdu -y
+sudo sleep 2
+
+sudo clear
 sudo echo "installing fail2ban"
 sudo apt install fail2ban -y
+sudo sleep 2
+
+sudo clear
 sudo echo "installing iptstate"
 sudo apt install iptstate -y
+sudo sleep 2
 
+sudo clear
 sudo echo "setup timezone"
 timedatectl set-timezone Europe/Moscow
+sudo sleep 2
 
+sudo clear
 sudo echo "setup Docker"
 #Установка Docker в Ubuntu
 sudo apt install docker -y
