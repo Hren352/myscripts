@@ -35,6 +35,16 @@ sudo echo "setup timezone"
 timedatectl set-timezone Europe/Moscow
 sudo sleep 2
 
+echo "net.ipv6.conf.all.disable_ipv6 = 1 \n net.ipv6.conf.default.disable_ipv6 = 1 \n net.ipv6.conf.lo.disable_ipv6 = 1">> /etc/sysctl.conf
+#net.ipv6.conf.all.disable_ipv6 = 1
+#net.ipv6.conf.default.disable_ipv6 = 1
+#net.ipv6.conf.lo.disable_ipv6 = 1
+
+Сохраните файл, закройте его и перезапустите sysctl для обновления конфигурации:
+
+sudo sysctl -p
+
+
 sudo clear
 sudo echo "setup Docker"
 #Установка Docker в Ubuntu
