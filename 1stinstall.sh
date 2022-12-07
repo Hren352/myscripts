@@ -35,13 +35,14 @@ sudo echo "setup timezone"
 timedatectl set-timezone Europe/Moscow
 sudo sleep 2
 
-echo "net.ipv6.conf.all.disable_ipv6 = 1 \n net.ipv6.conf.default.disable_ipv6 = 1 \n net.ipv6.conf.lo.disable_ipv6 = 1">> /etc/sysctl.conf
+#Опция -e - добавит \n после каждой строки.
+#echo -en "строка 1\nстрока 2" >> /tmp/test.txt
+
+echo -en "net.ipv6.conf.all.disable_ipv6 = 1\nnet.ipv6.conf.default.disable_ipv6 = 1\nnet.ipv6.conf.lo.disable_ipv6 = 1">> /etc/sysctl.conf
 #net.ipv6.conf.all.disable_ipv6 = 1
 #net.ipv6.conf.default.disable_ipv6 = 1
 #net.ipv6.conf.lo.disable_ipv6 = 1
-
-Сохраните файл, закройте его и перезапустите sysctl для обновления конфигурации:
-
+#Сохраните файл, закройте его и перезапустите sysctl для обновления конфигурации:
 sudo sysctl -p
 
 
