@@ -35,6 +35,11 @@ sudo echo "setup timezone"
 timedatectl set-timezone Europe/Moscow
 sudo sleep 2
 
+sudo clear
+sudo echo "install nfs-common"
+sudo apt install nfs-common
+sudo sleep 2
+
 #Опция -e - добавит \n после каждой строки.
 #echo -en "строка 1\nстрока 2" >> /tmp/test.txt
 
