@@ -37,7 +37,7 @@ sudo sleep 2
 
 sudo clear
 sudo echo "install nfs-common"
-sudo apt install nfs-common
+sudo apt install nfs-common -y
 sudo sleep 2
 
 #Опция -e - добавит \n после каждой строки.
