@@ -40,9 +40,13 @@ sudo echo "install nfs-common"
 sudo apt install nfs-common -y
 sudo sleep 2
 
+sudo clear
+sudo echo "install jq"
+sudo apt install jq -y
+sudo sleep 2
+
 #Опция -e - добавит \n после каждой строки.
 #echo -en "строка 1\nстрока 2" >> /tmp/test.txt
-
 echo -en "net.ipv6.conf.all.disable_ipv6 = 1\nnet.ipv6.conf.default.disable_ipv6 = 1\nnet.ipv6.conf.lo.disable_ipv6 = 1">> /etc/sysctl.conf
 #net.ipv6.conf.all.disable_ipv6 = 1
 #net.ipv6.conf.default.disable_ipv6 = 1
