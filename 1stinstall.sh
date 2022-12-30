@@ -45,6 +45,8 @@ sudo echo "install jq"
 sudo apt install jq -y
 sudo sleep 2
 
+sudo echo "PermitRootLogin no" >> /etc/ssh/sshd_config
+
 #Опция -e - добавит \n после каждой строки.
 #echo -en "строка 1\nстрока 2" >> /tmp/test.txt
 echo -en "net.ipv6.conf.all.disable_ipv6 = 1\nnet.ipv6.conf.default.disable_ipv6 = 1\nnet.ipv6.conf.lo.disable_ipv6 = 1">> /etc/sysctl.conf
