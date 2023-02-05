@@ -6,4 +6,4 @@
 
 machine-id+dhcp+new ip
 
- curl -L https://raw.githubusercontent.com/Hren352/myscripts/fa9c4380d52290ff5b346194d54556311431906c/machine-id.sh > machine-id.sh && chmod +x machine-id.sh
+ curl -L https://raw.githubusercontent.com/Hren352/myscripts/main/machine-id.sh > machine-id.sh && chmod +x machine-id.sh
