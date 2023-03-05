@@ -45,7 +45,7 @@ sudo echo "install jq"
 sudo apt install jq -y
 sudo sleep 2
 
-sudo echo "PermitRootLogin no" >> /etc/ssh/sshd_config
+sudo echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 
 #Опция -e - добавит \n после каждой строки.
 #echo -en "строка 1\nстрока 2" >> /tmp/test.txt
